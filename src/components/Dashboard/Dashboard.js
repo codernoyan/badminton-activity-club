@@ -1,4 +1,6 @@
 import React from 'react';
+import Break from '../Break/Break';
+import Details from '../Details/Details';
 import './Dashboard.css';
 
 const Dashboard = () => {
@@ -15,17 +17,24 @@ const Dashboard = () => {
             {/* weight info */}
             <div className="my-8 flex justify-around items-center bg-slate-100 p-3 rounded-xl">
                 <div>
-                    <h4 className="text-2xl font-medium">60<span className="text-sm text-slate-400">kg</span></h4>
+                    <h4 className="text-2xl font-bold">60<span className="text-sm text-slate-400">kg</span></h4>
                     <p className="text-slate-600">Weight</p>
                 </div>
                 <div>
-                    <h4 className="text-2xl font-medium">5.6</h4>
+                    <h4 className="text-2xl font-bold">5.6</h4>
                     <p className="text-slate-600">Height</p>
                 </div>
                 <div>
-                    <h4 className="text-2xl font-medium">24<span className="text-sm text-slate-400">Years</span></h4>
+                    <h4 className="text-2xl font-bold">24<span className="text-sm text-slate-400">Years</span></h4>
                     <p className="text-slate-600">Age</p>
                 </div>
+            </div>
+            <div className="mb-12">
+                <Break></Break>
+            </div>
+            <div>
+                <h3 className="text-xl font-medium mb-4">Activity Details</h3>
+                <Details></Details>
             </div>
         </div>
     );
