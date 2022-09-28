@@ -13,9 +13,9 @@ const Activity = (props) => {
                     <p className="mt-2 text-sm text-gray-500">Time Required: {timeRequired}</p>
                 </div>
                 <div className="absolute bottom-0 w-full">
-                <button className="relative inline-block px-8 py-3 overflow-hidden border border-indigo-600 group focus:outline-none focus:ring w-full">
-                    <span className="absolute inset-x-0 bottom-0 h-[2px] transition-all bg-indigo-600 group-hover:h-full group-active:bg-indigo-500"></span>
-                    <span className="relative text-sm font-medium text-indigo-600 transition-colors group-hover:text-white">Add to List</span>
+                <button className="relative inline-block px-8 py-3 overflow-hidden border border-rose-500 group focus:outline-none focus:ring w-full">
+                    <span className="absolute inset-x-0 bottom-0 h-[2px] transition-all bg-rose-500 group-hover:h-full group-active:bg-rose-400"></span>
+                    <span className="relative text-sm font-medium text-rose-500 transition-colors group-hover:text-white">Add to List</span>
                 </button>
                 </div>
             </div>

@@ -32,9 +32,12 @@ const Dashboard = () => {
             <div className="mb-12">
                 <Break></Break>
             </div>
-            <div>
+            <div className="mb-12">
                 <h3 className="text-xl font-medium mb-4">Activity Details</h3>
                 <Details></Details>
+            </div>
+            <div>
+                <button className="w-full bg-rose-500 py-4 text-white text-sm font-semibold rounded-lg">Activity Completed</button>
             </div>
         </div>
     );
