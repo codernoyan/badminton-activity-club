@@ -3,7 +3,8 @@ import Break from '../Break/Break';
 import Details from '../Details/Details';
 import './Dashboard.css';
 
-const Dashboard = () => {
+const Dashboard = ({seconds}) => {
+    // console.log(props.seconds)
     return (
         <div>
             <div>
@@ -34,7 +35,7 @@ const Dashboard = () => {
             </div>
             <div className="mb-12">
                 <h3 className="text-xl font-medium mb-4">Activity Details</h3>
-                <Details></Details>
+                <Details seconds={seconds}></Details>
             </div>
             <div>
                 <button className="w-full bg-rose-500 py-4 text-white text-sm font-semibold rounded-lg">Activity Completed</button>

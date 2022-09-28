@@ -3,36 +3,36 @@
       "id": 1,
       "title": "Learning the Rules",
       "image": "https://i.ytimg.com/vi/1UIhKZCPMYM/hqdefault.jpg",
-      "timeRequired": "30s"
+      "timeRequired": 30
     },
     {
       "id": 2,
       "title": "Familiar with the court",
       "image": "https://sportsvenuecalculator.com/wp-content/uploads/2022/06/2-1.jpg",
-      "timeRequired": "40s"
+      "timeRequired": 40
     },
     {
       "id": 3,
       "title": "Basic ways to strike",
       "image": "https://qph.cf2.quoracdn.net/main-qimg-df36561a4961504f3cf9580a9fbb3d6b-lq",
-      "timeRequired": "55s"
+      "timeRequired": 55
     },
     {
       "id": 4,
       "title": "Mastering the Strokes",
       "image": "https://getgoodatbadminton.com/wp-content/uploads/2018/08/Taufik_Hidayat1.jpg",
-      "timeRequired": "35s"
+      "timeRequired": 35
     },
     {
       "id": 5,
       "title": "Master the high and low serve",
       "image": "https://blog.playo.co/wp-content/uploads/2018/11/How-To-Play-Badminton-1020x550.jpg",
-      "timeRequired": "45s"
+      "timeRequired": 45
     },
     {
       "id": 6,
       "title": "Get ready to move anywhere",
       "image": "https://badmintonandy.com/wp-content/uploads/2018/04/Pretension-stance-2.png",
-      "timeRequired": "50s"
+      "timeRequired": 50
     }
   ]
