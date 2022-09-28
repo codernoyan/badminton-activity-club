@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Break from '../Break/Break';
 import Details from '../Details/Details';
 import './Dashboard.css';
 
 const Dashboard = ({seconds}) => {
     // console.log(props.seconds)
+
+    const [breakSeconds, setBreakSeconds] = useState([]);
+
+    const ShowBreakSeconds = (e) => {
+        console.log(e.target.innerText);
+        const newBreakSeconds = (e.target.innerText).slice(0, 2);
+        setBreakSeconds([newBreakSeconds]);
+    }
+
+    console.log(breakSeconds);
+
     return (
         <div>
             <div>
@@ -31,11 +42,11 @@ const Dashboard = ({seconds}) => {
                 </div>
             </div>
             <div className="mb-12">
-                <Break></Break>
+                <Break ShowBreakSeconds={ShowBreakSeconds}></Break>
             </div>
             <div className="mb-12">
                 <h3 className="text-xl font-medium mb-4">Activity Details</h3>
-                <Details seconds={seconds}></Details>
+                <Details seconds={seconds} breakSeconds={breakSeconds}></Details>
             </div>
             <div>
                 <button className="w-full bg-rose-500 py-4 text-white text-sm font-semibold rounded-lg">Activity Completed</button>

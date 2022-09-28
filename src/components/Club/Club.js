@@ -8,7 +8,6 @@ const Club = () => {
     const [seconds, setSeconds] = useState([]);
 
     const addToList = (time) => {
-        console.log(time);
         const newSeconds = [...seconds, time];
         setSeconds(newSeconds);
         // console.log(newSeconds);
