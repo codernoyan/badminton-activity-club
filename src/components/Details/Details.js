@@ -13,7 +13,7 @@ const Details = ({ seconds, breakSeconds }) => {
             </div>
             <div className="flex justify-between items-center bg-slate-100 p-4 rounded-xl">
                 <h4 className="font-semibold">Break Time:</h4>
-                <h4 className="text-slate-400"><span>{breakSeconds[0]}</span> seconds</h4>
+                <h4 className="text-slate-400"><span>{breakSeconds}</span> seconds</h4>
             </div>
         </div>
     );

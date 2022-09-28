@@ -6,15 +6,12 @@ import './Dashboard.css';
 const Dashboard = ({seconds}) => {
     // console.log(props.seconds)
 
-    const [breakSeconds, setBreakSeconds] = useState([]);
+    const [breakSeconds, setBreakSeconds] = useState(0);
 
     const ShowBreakSeconds = (e) => {
-        console.log(e.target.innerText);
-        const newBreakSeconds = (e.target.innerText).slice(0, 2);
-        setBreakSeconds([newBreakSeconds]);
+        const newBreakSeconds = Number((e.target.innerText).slice(0, 2));
+        setBreakSeconds(newBreakSeconds);
     }
-
-    console.log(breakSeconds);
 
     return (
         <div>
