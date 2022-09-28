@@ -20,7 +20,7 @@ const Activities = () => {
                 <h1 className="text-rose-500 text-2xl font-semibold">Badminton Activity Club</h1>
             </div>
             <h3 className="text-xl font-semibold my-6">Select Today's Activity:</h3>
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {
                     activities.map(activity => <Activity activity={activity} key={activity.id}></Activity>)
                 }
