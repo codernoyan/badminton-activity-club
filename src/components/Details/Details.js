@@ -11,12 +11,12 @@ const Details = ({ seconds }) => {
     return (
         <div>
             <div className="mb-4 flex justify-between items-center bg-slate-100 p-4 rounded-xl bg-rose-200">
-                <h4 className="font-semibold">Activity Time:</h4>
-                <h4 className="text-rose-600 font-semibold"><span>{totalSeconds}</span> seconds</h4>
+                <h4 className="font-semibold text-rose-600">Activity Time:</h4>
+                <h4 className="text-rose-500 font-semibold"><span>{totalSeconds}</span> seconds</h4>
             </div>
             <div className="flex justify-between items-center bg-slate-100 p-4 rounded-xl bg-rose-200">
-                <h4 className="font-semibold">Break Time:</h4>
-                <h4 className="text-rose-600 font-semibold"><span>{breakSecondFromLs}</span> seconds</h4>
+                <h4 className="font-semibold text-rose-600">Break Time:</h4>
+                <h4 className="text-rose-500 font-semibold"><span>{breakSecondFromLs}</span> seconds</h4>
             </div>
         </div>
     );

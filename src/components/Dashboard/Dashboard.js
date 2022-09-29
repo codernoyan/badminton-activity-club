@@ -5,6 +5,7 @@ import Details from '../Details/Details';
 import './Dashboard.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import PhysicalInfo from '../PhysicalInfo/PhysicalInfo';
 
 const Dashboard = ({ seconds }) => {
     // console.log(props.seconds)
@@ -23,8 +24,16 @@ const Dashboard = ({ seconds }) => {
 
     return (
         <div>
-            <div>
-                <h3 className="text-2xl font-medium">Noyan Dey</h3>
+            <div className="flex flex-col items-center gap-1">
+                <h3 className="text-2xl font-bold">Noyan Dey</h3>
+
+                <div className="flex items-center gap-1 text-gray-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+                    </svg>
+                    <p className="text-xs font-medium">Frontend Developer</p>
+                </div>
+
                 <div className="flex items-center gap-1 text-gray-400">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6"> <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /> <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
                     </svg>
@@ -32,19 +41,8 @@ const Dashboard = ({ seconds }) => {
                 </div>
             </div>
             {/* weight info */}
-            <div className="my-8 flex justify-around items-center bg-slate-100 p-3 rounded-xl">
-                <div>
-                    <h4 className="text-2xl font-bold">60<span className="text-sm text-slate-400">kg</span></h4>
-                    <p className="text-slate-600">Weight</p>
-                </div>
-                <div>
-                    <h4 className="text-2xl font-bold">5.6</h4>
-                    <p className="text-slate-600">Height</p>
-                </div>
-                <div>
-                    <h4 className="text-2xl font-bold">24<span className="text-sm text-slate-400">Years</span></h4>
-                    <p className="text-slate-600">Age</p>
-                </div>
+            <div>
+                <PhysicalInfo></PhysicalInfo>
             </div>
             <div className="mb-12">
                 <Break ShowBreakSeconds={ShowBreakSeconds}></Break>
