@@ -2,7 +2,7 @@ import React from 'react';
 
 const Questions = () => {
     return (
-        <div className="my-8 mx-20">
+        <div className="my-8 mx-8 lg:mx-20">
             <h1 className="text-2xl font-semibold mb-4">React Questions:</h1>
             <div className="space-y-4">
                 <details className="group" open>

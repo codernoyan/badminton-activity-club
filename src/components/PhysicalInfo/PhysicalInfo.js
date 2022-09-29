@@ -13,7 +13,7 @@ const PhysicalInfo = () => {
                     <p className="text-rose-600">Height</p>
                 </div>
                 <div>
-                    <h4 className="text-2xl font-bold text-rose-500">24<span className="text-sm text-rose-400 text-rose-400">Years</span></h4>
+                    <h4 className="text-2xl font-bold text-rose-500">24<span className="text-sm text-rose-400 text-rose-400">Yrs</span></h4>
                     <p className="text-rose-600">Age</p>
                 </div>
             </div>
