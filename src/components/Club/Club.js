@@ -17,10 +17,10 @@ const Club = () => {
 
     return (
         <div className="grid grid-cols-4 gap-4">
-            <div className="club-activities col-span-3 my-12 mx-20">
+            <div className="club-activities md:col-span-2 lg:col-span-3 my-12 md:mx-8 lg:mx-20">
                 <Activities addToList={addToList}></Activities>
             </div>
-            <div className="bg-white shadow-md p-6">
+            <div className="bg-white md:col-span-2 lg:col-span-1 shadow-md p-6">
                 <Dashboard seconds={seconds}></Dashboard>
             </div>
         </div>

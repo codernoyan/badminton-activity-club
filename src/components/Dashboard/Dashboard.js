@@ -17,7 +17,9 @@ const Dashboard = ({ seconds }) => {
         sendDataToLocalStorage('second', newBreakSeconds);
     }
 
-    const showToast = () => toast.success('Wow! Activity is completed.')
+    const showToast = () => toast.success('Wow! Activity is completed.', {
+        position: "top-center",
+    })
 
     return (
         <div>
