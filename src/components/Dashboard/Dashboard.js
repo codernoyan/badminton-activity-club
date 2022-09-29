@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { sendDataToLocalStorage } from '../../utilities/utilities';
 import Break from '../Break/Break';
 import Details from '../Details/Details';
 import './Dashboard.css';
@@ -11,6 +12,7 @@ const Dashboard = ({seconds}) => {
     const ShowBreakSeconds = (e) => {
         const newBreakSeconds = Number((e.target.innerText).slice(0, 2));
         setBreakSeconds(newBreakSeconds);
+        sendDataToLocalStorage('second', newBreakSeconds);
     }
 
     return (
