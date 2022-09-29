@@ -4,10 +4,6 @@ const total = (seconds) => {
 }
 
 // add to localStorage
-const getDataFromLocalStorage = () => {
-    const data = JSON.parse(localStorage.getItem('break-second'));
-    return data;
-}
 
 const sendDataToLocalStorage = (id, value) => {
     let info = getDataFromLocalStorage();
@@ -18,6 +14,12 @@ const sendDataToLocalStorage = (id, value) => {
     info[id] = value;
     localStorage.setItem('break-second', JSON.stringify(info));
 }
+
+const getDataFromLocalStorage = () => {
+    const data = JSON.parse(localStorage.getItem('break-second'));
+    return data;
+}
+
 
 export {
     total,

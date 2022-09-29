@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Activities from '../Activities/Activities';
 import Dashboard from '../Dashboard/Dashboard';
-import './Club.css';
 
 const Club = () => {
 

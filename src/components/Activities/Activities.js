@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import './Activities.css';
 import Activity from '../Activity/Activity';
 
 const Activities = ({addToList}) => {
