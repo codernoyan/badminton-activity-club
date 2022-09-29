@@ -3,8 +3,10 @@ import { sendDataToLocalStorage } from '../../utilities/utilities';
 import Break from '../Break/Break';
 import Details from '../Details/Details';
 import './Dashboard.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-const Dashboard = ({seconds}) => {
+const Dashboard = ({ seconds }) => {
     // console.log(props.seconds)
 
     const [breakSeconds, setBreakSeconds] = useState(0);
@@ -14,6 +16,8 @@ const Dashboard = ({seconds}) => {
         setBreakSeconds(newBreakSeconds);
         sendDataToLocalStorage('second', newBreakSeconds);
     }
+
+    const showToast = () => toast.success('Wow! Activity is completed.')
 
     return (
         <div>
@@ -48,7 +52,8 @@ const Dashboard = ({seconds}) => {
                 <Details seconds={seconds} breakSeconds={breakSeconds}></Details>
             </div>
             <div>
-                <button className="w-full bg-rose-500 py-4 text-white text-sm font-semibold rounded-lg">Activity Completed</button>
+                <button onClick={showToast} className="w-full bg-rose-500 py-4 text-white text-sm font-semibold rounded-lg">Activity Completed</button>
+                <ToastContainer></ToastContainer>
             </div>
         </div>
     );
