@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { sendDataToLocalStorage } from '../../utilities/utilities';
 import Break from '../Break/Break';
 import Details from '../Details/Details';
-import './Dashboard.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import PhysicalInfo from '../PhysicalInfo/PhysicalInfo';
