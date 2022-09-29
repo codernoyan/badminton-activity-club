@@ -41,7 +41,7 @@ const Questions = () => {
                 <details className="group">
                     <summary className="flex items-center justify-between p-4 rounded-lg cursor-pointer bg-gray-50">
                         <h5 className="font-medium text-gray-900">
-                        What else can be done with the useEffect apart from fetch?
+                            What else can be done with the useEffect apart from fetch?
                         </h5>
 
                         <svg className="flex-shrink-0 ml-1.5 w-5 h-5 transition duration-300 group-open:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -51,14 +51,14 @@ const Questions = () => {
 
                     <p className="px-4 mt-4 leading-relaxed text-gray-700">
                         <span className="font-semibold">The things can be done except fetch are:</span>
-                        <ul>
-                            <li>Validating input field</li>
-                            <li>Live Filtering</li>
-                            <li>Trigger animation on new array value</li>
-                            <li>State Change</li>
-                            <li>Props Changes</li>
-                        </ul>
                     </p>
+                    <ul className="px-4 mt-4 leading-relaxed text-gray-700">
+                        <li>Validating input field</li>
+                        <li>Live Filtering</li>
+                        <li>Trigger animation on new array value</li>
+                        <li>State Change</li>
+                        <li>Props Changes</li>
+                    </ul>
                 </details>
             </div>
 
