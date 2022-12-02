@@ -20,7 +20,7 @@ const getDataFromLocalStorage = () => {
     return data;
 }
 
-
+// export all utilites
 export {
     total,
     getDataFromLocalStorage,
